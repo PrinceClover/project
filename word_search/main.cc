@@ -13,7 +13,7 @@ int main(int argc,char * argv[])
 	//check args
 	if(argc != 2)
 	{
-		cout << "error args!" << endl;
+		cout << "please input like: search_word filename" << endl;
 		return -1;
 	}
 

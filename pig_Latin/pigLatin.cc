@@ -15,12 +15,12 @@ int main(void)
 {
 	string s;
 	int flag;
-	cout << "please input a word,input \"#exit\" to exit:" << endl;
+	cout << "please input a \033[31;2mword\033[0m,input \033[32;2m\"#exit\"\033[0m to \033[31;2mexit\033[0m:" << endl;
 	while(cin >> s)
 	{
 		if(s == "#exit")
 		{
-			cout << "bye-bye ^w^" << endl;
+			cout <<"\033[5;33mbye-bye ^w^\033[0m" << endl;
 			break;
 		}
 		flag = 0;
@@ -61,7 +61,7 @@ int main(void)
 		}
 		else
 		{
-			cout << "Pig Latin word is: "  << pigs << endl;
+			cout << "Pig Latin word is: \033[32;2m"  << pigs << "\033[0m" << endl;
 			cout <<  endl;
 		}
 	}
