@@ -87,9 +87,6 @@ public:
 	void cleanHide();
 	void cleanControl();
 
-	//make format by formatflag
-	void makeFormatStr();
-
 	//colorprint one PrintType
 	ColorPrint<PrintType> & print(const PrintType pt);
 	std::string & openFormat();
@@ -97,6 +94,8 @@ public:
 private:
 	//debug printer
 	void printdebug();
+	//make format by formatflag
+	void makeFormatStr();
 private:
 	PrintType _printtype;			//printtype will be print
 	std::string _format;			//format string 

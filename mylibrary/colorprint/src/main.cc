@@ -13,11 +13,12 @@ using Prince_CP::ColorPrint;
 int main(void)
 {
 	ColorPrint<int> cp;
-	cp.setFormat(BG_RED|FONT_GREEN|HIDE|INVERT|FLICKER|UNDERLINE|HIGHLIGHT);
-	//cp.cleanControl();
-	int a = 999999;
-	cout << "\033[47;30mhi\033[0m " << endl;
-	cout << cp.openFormat() << "hello " << cp.print(a) << a 
-		 << cp.closeFormat() << " hello" << endl;
+	cp.setFormat(BG_RED);
+	cp.appendFormat(FONT_BLUE);
+	cp.appendFormat(UNDERLINE);
+
+	int testint = 1024;
+	cout << cp.print(testint) << endl;
+	cout << cp.openFormat() << "hello " << testint  << cp.closeFormat() << endl;
 	return 0;
 }
