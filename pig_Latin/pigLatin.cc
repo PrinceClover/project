@@ -6,6 +6,7 @@
  
 #include <iostream>
 #include <string>
+#include <regex>
 using std::cout;
 using std::endl;
 using std::cin;
